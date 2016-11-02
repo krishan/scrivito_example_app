@@ -2,7 +2,7 @@ Rails.application.configure do
   config.action_controller.perform_caching = false
   config.action_mailer.raise_delivery_errors = false
   config.active_support.deprecation = :log
-  config.assets.debug = true
+  config.assets.debug = false
   config.assets.digest = true
   config.assets.raise_runtime_errors = true
   config.cache_classes = false
