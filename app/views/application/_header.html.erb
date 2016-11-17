@@ -50,6 +50,7 @@
       <% end %>
 
       <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to("Switch to Javascript", js_path) %></li>
         <li>
           <% if current_user %>
             <%= link_to("View as website visitor", session_path, method: :delete) %>
