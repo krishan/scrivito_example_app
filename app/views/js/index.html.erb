@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Scrivito JS Example App</title>
+
+  <%= scrivito_head_tags %>
+
+  <%= stylesheet_link_tag("application", media: "all") %>
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.jpg">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <%= javascript_include_tag("https://maps.googleapis.com/maps/api/js?key=#{Rails.application.google_maps_api_key}") %>
+</head>
+<body>
+  <div class="wrapper" id="application">
+
+    LOADING...
+
+  </div>
+  <%= scrivito_body_tags %>
+
+  <%= javascript_include_tag("application_with_react") %>
+</body>
+</html>
